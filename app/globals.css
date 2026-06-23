@@ -1,0 +1,166 @@
+@import "tailwindcss";
+
+:root {
+  /* Brand Palette */
+  --blue: #3045ff;
+  --green: #3fd58b;
+  --navy: #252a47;
+  --soft: #d9def1;
+  --black: #000000;
+  --white: #ffffff;
+
+  /* Semantic Colors */
+  --background: #ffffff;
+  --foreground: #10121d;
+
+  --card: #ffffff;
+  --card-foreground: #252a47;
+
+  --primary: #3045ff;
+  --primary-foreground: #ffffff;
+
+  --secondary: #d9def1;
+  --secondary-foreground: #252a47;
+
+  --accent: #3fd58b;
+  --accent-foreground: #252a47;
+
+  --muted: #d9def1;
+  --muted-foreground: #6b7280;
+
+  --border: rgba(37, 42, 71, 0.12);
+  --input: rgba(37, 42, 71, 0.12);
+
+  --ring: #3045ff;
+
+  --radius: 1rem;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-blue: var(--blue);
+  --color-green: var(--green);
+  --color-navy: var(--navy);
+  --color-soft: var(--soft);
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* ========================================
+   Base
+======================================== */
+
+* {
+  border-color: var(--border);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), sans-serif;
+  min-height: 100vh;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ========================================
+   Selection
+======================================== */
+
+::selection {
+  background: var(--primary);
+  color: var(--white);
+}
+
+::-moz-selection {
+  background: var(--primary);
+  color: var(--white);
+}
+
+/* ========================================
+   Scrollbar
+======================================== */
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--soft);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--navy);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary) var(--soft);
+}
+
+/* ========================================
+   Utilities
+======================================== */
+
+.text-gradient {
+  background: linear-gradient(
+    135deg,
+    var(--blue) 0%,
+    var(--green) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-gradient-brand {
+  background: linear-gradient(
+    135deg,
+    var(--blue) 0%,
+    var(--green) 100%
+  );
+}
+
+.glass {
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(37, 42, 71, 0.08);
+}
+
+.hero-grid {
+  background-image:
+    linear-gradient(rgba(37, 42, 71, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(37, 42, 71, 0.04) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
