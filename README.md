@@ -205,7 +205,7 @@ NEXT_PUBLIC_APP_URL=
 ### Clone Repository
 
 ```bash
-git clone https://github.com/your-username/invoiceflow.git
+git clone https://github.com/Fouzia-Oreen/IntelliVoice-Modern-Invoice-Management-SaaS.git
 cd intellivoice
 ```
 
