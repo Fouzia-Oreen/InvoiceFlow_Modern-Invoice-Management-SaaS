@@ -1,13 +1,9 @@
-# InvoiceFlow – Modern Invoice Management SaaS
+# IntelliVoice – Modern Invoice Management SaaS
 
 ![Next.js](https://img.shields.io/badge/Next.js-15-black)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue)
-![Prisma](https://img.shields.io/badge/Prisma-ORM-green)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Neon-blue)
-![Auth.js](https://img.shields.io/badge/Auth.js-Authentication-purple)
-![License](https://img.shields.io/badge/License-MIT-yellow)
 
-A modern, full-stack invoice management platform built to streamline billing workflows for freelancers, agencies, and businesses. InvoiceFlow enables users to create, manage, send, and track invoices while automating client communication, payment reminders, PDF generation, and authentication.
+
+A modern, full-stack invoice management platform built to streamline billing workflows for freelancers, agencies, and businesses. IntelliVoice enables users to create, manage, send, and track invoices while automating client communication, payment reminders, PDF generation, and authentication.
 
 Built using the latest web technologies including **Next.js App Router**, **Neon PostgreSQL**, **Prisma ORM**, **Auth.js**, **Mailtrap**, **Tailwind CSS**, and **Shadcn/UI**, the platform delivers a fast, secure, and scalable invoicing experience.
 
@@ -113,7 +109,7 @@ Built using the latest web technologies including **Next.js App Router**, **Neon
 ## 📁 Project Structure
 
 ```bash
-invoiceflow/
+intellivoice/
 │
 ├── app/
 │   ├── dashboard/
@@ -210,7 +206,7 @@ NEXT_PUBLIC_APP_URL=
 
 ```bash
 git clone https://github.com/your-username/invoiceflow.git
-cd invoiceflow
+cd intellivoice
 ```
 
 ### Install Dependencies
